@@ -1,0 +1,86 @@
+<body>
+  <div class="barra-lateral">
+    <div class="nombre-pagina">
+      <i id="cloud" class="bi bi-wrench-adjustable-circle-fill"></i>
+      <span>Ferreplast</span>
+    </div>
+    <nav class="navegacion">
+      <ul>
+        <li>
+          <a routerLink="/inicio" routerLinkActive="active">
+            <i class="bi bi-house"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/acceso" routerLinkActive="active">
+            <i class="bi bi-person-fill"></i>
+            <span>Accesos</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/categorias" routerLinkActive="active">
+            <i class="bi bi-bookmark-plus"></i>
+            <span>Categorias</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/productos" routerLinkActive="active">
+            <i class="bi bi-border-all"></i>
+            <span>Productos</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/ventas" routerLinkActive="active">
+            <i class="bi bi-border-width"></i>
+            <span>Ventas</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/reportes" routerLinkActive="active">
+            <i class="bi bi-bar-chart"></i>
+            <span>Reportes</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+<main>
+  <div class="contenido">
+    <div class="titulo">
+      <p>BIENVENIDO A FERREPLAST</p>
+    </div>
+  </div>
+  <div class="contenedor-tablas">
+    <div class="card">
+      <div class="card-header">
+        <i class="bi bi-justify"></i>
+        Agregar Usuarios
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="usuario">Usuario:</label>
+          <input type="text" id="usuario" name="usuario" required>
+
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" name="contrasena" required>
+
+          <label for="rol">Rol de Usuario:</label>
+          <select class="form-select" id="rol" name="rol">
+            <option value="admin">Administrador</option>
+            <option value="usuario">Usuario</option>
+          </select>
+          <br>
+          <button class="btn btn-info" type="submit">Guardar</button>
+        </form>
+
+      </div>
+    </div>
+    </div>
+</main>
+</body>
